@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>About Me</h1>
-    <img src="./images/im2.jpg" height="150px" width="150px" alt="My Picture">
-    <p>I am biniam Markos.I was born in Wolaita Sodo, Ethiopia.I am currently studying  Software Engineering in Addis Ababa University.</p>
+    <div class="nav-container">
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="./about-me.html">About Me</a>
+            <a href="./Education.html">Education</a>
+            <a href="./hobbies.html">Hobbies</a>
+            <a href="./services.html">Services</a>
+        </div>
+    </div>
+    
+    
+    <p>
+        My name is Biniam Markos.I pursued my secondary education at Chora Secondary School, where I developed a strong foundation in science, mathematics, and technology. My dedication and commitment to academics enabled me to achieve excellent results in the University entrance exam, opening doors to my higher education journey.  
+        Currently, I am pursuing a degree in Software Engineering at Addis Ababa University, one of the most prestigious institutions in the country. My studies focus on mastering programming languages, algorithms, and cutting-edge technologies that are shaping the future of software development.  
+        I have a keen interest in artificial intelligence, web development, and backend systems. Beyond academics, I actively participate in collaborative projects, hackathons, and tech events to apply my knowledge and grow as a developer. My ultimate goal is to innovate solutions that address real-world problems and contribute to the advancement of technology.</p>
+    
     <footer>
-        <p>Connect with me on:</p>
-        <a href="https://github.com/Biniam777">GitHub</a>
+        <p class="title">Connect with me on:</p>
+        <a href="https://github.com/Biniam777"><img src="./images/github icon.png" height="100px" width="100px" alt="github icon"></a>
+        <a href="https://t.me/humble_man_for_life"><img src="./images/telegram.png" height="100px" width="100px" alt="telegram icon"></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
+    
+            menuToggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+    
     
 </body>
 </html>

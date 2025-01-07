@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Services</h1>
+    <div class="nav-container">
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="./about-me.html">About Me</a>
+            <a href="./Education.html">Education</a>
+            <a href="./hobbies.html">Hobbies</a>
+            <a href="./services.html">Services</a>
+        </div>
+    </div>
+    
     <p>Here are the services I provide:</p>
-    <ul>
-        <li>Frontend Web Development using HTML,CSS,JS and REACT</li>
-        <li>Full Stack Web Development using required libraries</li>
-    </ul>
+<ul>
+    <li>Frontend Web Development using HTML, CSS, JavaScript, and React</li>
+    <li>Full Stack Web Development using modern frameworks and required libraries</li>
+    <li>Responsive Web Design to ensure websites look great on all devices</li>
+    <li>Creating Single Page Applications (SPA) for seamless user experiences</li>
+    <li>Backend Development using Node.js and Express</li>
+    <li>Database Management using MongoDB and MySQL</li>
+    <li>RESTful API Development for scalable and robust web services</li>
+    <li>Basic SEO (Search Engine Optimization) to improve website visibility</li>
+    <li>Version Control and Collaboration using Git and GitHub</li>
+    <li>Deploying applications to platforms like AWS and Heroku</li>
+</ul>
+
     <footer>
-        <p>Connect with me on:</p>
-        <a href="https://github.com/Biniam777">GitHub</a>
+        <p class="title">Connect with me on:</p>
+        <a href="https://github.com/Biniam777"><img src="./images/github icon.png" height="100px" width="100px" alt="github icon"></a>
+        <a href="https://t.me/humble_man_for_life"><img src="./images/telegram.png" height="100px" width="100px" alt="telegram icon"></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
+    
+            menuToggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+    
     
 </body>
 </html>

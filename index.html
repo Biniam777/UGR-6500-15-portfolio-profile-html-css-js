@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
     <h1>Home Page</h1>
-    <div>
-        <a href="./src/about-me.html">About Me</a>
-        <a href="./src/Education.html">Education</a>
-        <a href="./src/hobbies.html">Hobbies</a>
-        <a href="./src/services.html">Services</a>
+    
+    <div class="nav-container">
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <div class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./src/about-me.html">About Me</a>
+            <a href="./src/Education.html">Education</a>
+            <a href="./src/hobbies.html">Hobbies</a>
+            <a href="./src/services.html">Services</a>
+        </div>
     </div>
+    <img src="./src/images/homepage.png" alt="Home Page Icon" width="150" height="150">
     <h2>Welcome to My Home Page</h2>
-    <img src="./images/im1.png" alt="Home Page Icon" width="200" height="200">
-    <p>This is the home page of my personal website portfolio telling about me. Here you can find information about me, my education, my hobbies, and the services I offer.</p>
-    <p>Feel free to explore the links above to learn more about me.</p>
+    
+    <p>This is the home page of my personal website portfolio, where you can learn all about me, my background, and what I am passionate about. Through this website, I aim to share my journey, my skills, and the services I provide to those interested in connecting with me. It's a glimpse into my world, highlighting my education, hobbies, and professional expertise.</p>
+<p>Whether you're curious about my academic background, interested in the things I enjoy doing in my free time, or looking for someone skilled in web development and related services, you'll find all the details here. Feel free to explore the links above to dive deeper into different aspects of my life and work. Your feedback and interaction are always welcome!</p>
+
     
     <footer>
-        <p>Connect with me on:</p>
+        <p class="title">Connect with me on:</p>
         
-        <a href="https://github.com/Biniam777">GitHub</a>
+        <a href="https://github.com/Biniam777"><img src="./src/images/github icon.png" height="100px" width="100px" alt="github icon"></a>
+        <a href="https://t.me/humble_man_for_life"><img src="./src/images/telegram.png" height="100px" width="100px" alt="telegram icon"></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
+    
+            menuToggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+    
 </body>
 </html>

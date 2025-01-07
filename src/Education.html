@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Education</h1>
-    <P>I pursued my secondary education in Chora Secondary School until I took University entrance exam.Now,I am currently studying Software Engineering in Addis Ababa University.</P>
+    <div class="nav-container">
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="./about-me.html">About Me</a>
+            <a href="./Education.html">Education</a>
+            <a href="./hobbies.html">Hobbies</a>
+            <a href="./services.html">Services</a>
+        </div>
+    </div>
+    
+    <p>I pursued my secondary education at Chora Secondary School, where I developed a strong foundation in science and mathematics. My dedication and hard work helped me excel in the University entrance exam.  
+        Currently, I am studying Software Engineering at Addis Ababa University, where I am honing my skills in programming, problem-solving, and cutting-edge technologies. I have a deep interest in artificial intelligence and web development, and I am actively working on projects to strengthen my practical knowledge.</p>
+        
     <footer>
-        <p>Connect with me on:</p>
-        <a href="https://github.com/Biniam777">GitHub</a>
+        <p class="title">Connect with me on:</p>
+        <a href="https://github.com/Biniam777"><img src="./images/github icon.png" height="100px" width="100px" alt="github icon"></a>
+        <a href="https://t.me/humble_man_for_life"><img src="./images/telegram.png" height="100px" width="100px" alt="telegram icon"></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
+    
+            menuToggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+    
 </body>
 </html>

@@ -3,24 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
+    <title>Hobbies</title> 
+    <link rel="stylesheet" href="./style.css"> 
+    
+</head>
+<body>
     <h1>Hobbies</h1>
+    <div class="nav-container">
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="./about-me.html">About Me</a>
+            <a href="./Education.html">Education</a>
+            <a href="./hobbies.html">Hobbies</a>
+            <a href="./services.html">Services</a>
+        </div>
+    </div>
+   
     <p>I have three hobbies I employ my spare time on:
         <ol>
             <li>Watching football</li>
             <li>Watching tennis</li>
             <li>Watching movies</li>
-        </ol>    
+        </ol>
     </p>
+    
+    <p>Another hobby of mine is reading books, especially in the genres of science fiction and self-improvement. I love to dive into different worlds and explore new ideas.</p>
+    
+    <p>Additionally, I enjoy hiking in nature, which allows me to disconnect from the digital world and reconnect with the peaceful surroundings of the outdoors.</p>
+    
+    <p>Another activity I enjoy is playing video games. I find it relaxing and a great way to unwind, while also staying engaged in a form of entertainment and competition.</p>
+    
+    <p>I also dedicate some of my time to cooking. Experimenting with new recipes and flavors is something I find very rewarding, and it also allows me to enjoy delicious meals with my loved ones.</p>
+    
+ 
     <footer>
-        <p>Connect with me on:</p>
-        <a href="https://github.com/Biniam777">GitHub</a>
+        <p class="title">Connect with me on:</p>
+        <a href="https://github.com/Biniam777"><img src="./images/github icon.png" height="100px" width="100px" alt="github icon"></a>
+        <a href="https://t.me/humble_man_for_life"><img src="./images/telegram.png" height="100px" width="100px" alt="telegram icon"></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
     
+            menuToggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
     
-    
-</head>
-<body>
     
 </body>
 </html>
