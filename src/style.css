@@ -1,4 +1,4 @@
-/* General body styling */
+
 body {
     background-color: #D3D3D3;
     opacity: 0;
@@ -17,7 +17,7 @@ html {
 
 
 
-/* Navigation styling */
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -26,7 +26,7 @@ html {
 }
 
 
-/* Menu links */
+
 .nav a {
     text-decoration: none;
     color: black;
@@ -38,11 +38,11 @@ html {
 
 .nav a:hover {
     background-color: darkgreen;
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); 
 }
 
 
-/* Hide the hamburger menu by default */
+
 .menu-toggle {
     display: none;
 }
@@ -53,7 +53,7 @@ footer {
     padding: 20px;
 }
 
-/* Footer links style */
+
 footer a {
     color: black;
     text-decoration: none;
@@ -70,12 +70,12 @@ footer a {
 footer a {
     display: inline-block;
     transition: transform 0.3s ease, filter 0.3s ease;
-    margin-right: 20px; /* Add space between icons */
+    margin-right: 20px; 
 }
 
 footer a:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
-    filter: brightness(1.2); /* Slightly brighten the icon on hover */
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
 }
 
 footer a img {
@@ -84,35 +84,35 @@ footer a img {
 
 
 
-/* Footer links hover effect */
 
 
 
-/* Responsive styles for mobile portrait mode */
+
+
 @media (max-width: 768px) and (orientation: portrait) {
     .nav {
         flex-direction: column;
         align-items: flex-start;
-        display: none; /* Initially hide the menu */
+        display: none; 
     }
 
     .nav.active {
         display: flex;
        
-          /* Show menu when active */
+          
     }
 
     .menu-toggle {
-        display: block;       /* Show hamburger menu in portrait */
-        position: absolute;   /* Allow positioning within the viewport */
-        top: 10px;            /* Distance from the top of the viewport */
-        right: 10px;          /* Distance from the right of the viewport */
+        display: block;       
+        position: absolute;   
+        top: 10px;            
+        right: 10px;          
         background: none;
         border: none;
         font-size: 24px;
         cursor: pointer;
         z-index: 10; 
-        transition: transform 0.3s ease;         /* Ensure it appears above other elements */
+        transition: transform 0.3s ease;        
     }
     .menu-toggle:hover {
         transform: scale(1.1) rotate(5deg);
